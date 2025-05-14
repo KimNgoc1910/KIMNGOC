@@ -1,0 +1,110 @@
+/* Định dạng toàn trang */
+body {
+  background-image: url("/HinhAnh/NenWeb.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 60px;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Định dạng cho tiêu đề */
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}
+.card strong {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* Card chính */
+.card {
+  background: rgba(255, 255, 255, 0.056);
+  border: 2px solid #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 0 20px rgba(171, 191, 255, 0.792);
+  padding: 40px 40px; /* Tăng padding cho thoáng */
+  max-width: 900px; /* Tăng bề ngang tối đa */
+  width: 90%; /* Đảm bảo responsive */
+  margin: 40px auto;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Kết quả hiển thị */
+.result {
+  margin-top: 70px; /* Đẩy thông báo lên cao hơn */
+  padding: 24px 18px; /* Tăng padding cho cao hơn */
+  background-color: rgba(84, 172, 191, 0.2);
+  font-size: 2.5rem;
+  text-align: center;
+  border-left: 5px solid #483cf5;
+  color: #000000;
+  font-weight: bold;
+  text-shadow: 0 0 8px #54acbf, 0 0 16px #a7ebf2;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgb(255, 255, 255); /* Nhẹ nhàng hơn */
+  text-align: center;
+}
+
+/* Label input rõ ràng */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 2px solid #bddbffa8;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #000000;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: hsl(234, 77%, 54%);
+}
+/* ...existing code... */
+
+@media (max-width: 500px) {
+  .card {
+    padding: 50px auto;
+    margin: 30px auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
